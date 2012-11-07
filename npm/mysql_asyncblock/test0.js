@@ -17,7 +17,7 @@ for(var i=0;i<10000;++i){
 //q.query('commit');
 console.log('GO');
 console.time('QUERY');
-q.exec1(function(){
+q.exec0(function(){
     console.timeEnd('QUERY');
     mcl.end();
 });

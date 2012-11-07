@@ -9,6 +9,7 @@ Query.prototype = {
     query : function(sql, param){
         this.q_.push({sql:sql, param:param});
     },
+    // クエリー一回ごとに同期をとる
     exec0 : function(callback){
         var self = this;
         asyncblock(function(flow) {
@@ -27,6 +28,7 @@ Query.prototype = {
             callback();
         });
     },
+    // クエリーを全部投げてから同期をとる
     exec1 : function(callback){
         var self = this;
         asyncblock(function(flow) {
@@ -45,6 +47,7 @@ Query.prototype = {
             callback();
         });
     },
+    // asyncblockを使わない同期
     exec2 : function(callback){
         var sync = 0;
         var results = [];

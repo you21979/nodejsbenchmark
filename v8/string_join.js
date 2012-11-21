@@ -56,6 +56,44 @@ function(){
     console.timeEnd(TID);
 },
 function(){
+    var TID = "join4";
+    console.time(TID);
+    for(var i = 0; i<MAX; ++i){
+        var o = "";
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+        o.concat("abcdefg");
+    }
+    console.timeEnd(TID);
+},
+function(){
+    var TID = "join5";
+    console.time(TID);
+    for(var i = 0; i<MAX; ++i){
+        var o = "";
+        o.concat(
+            "abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+            ,"abcdefg"
+        );
+    }
+    console.timeEnd(TID);
+},
+function(){
 }
 ].forEach(function(fnc){
     fnc();

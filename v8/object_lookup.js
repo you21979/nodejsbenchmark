@@ -1,7 +1,11 @@
 var MAX = 100000;
 var OBJ = {};
+var ARRAY = new Array(MAX);
 for(var i=0;i<MAX;++i){
     OBJ[i] = 0;
+}
+for(var i=0;i<MAX;++i){
+    ARRAY[i] = 0;
 }
 [
 function(){
@@ -40,6 +44,23 @@ function(){
 },
 function(){
     var TID = "hasOwnProperty";
+    console.time(TID);
+    for(var i=0;i<MAX;++i){
+        if( OBJ.hasOwnProperty('aaaaaaaaaaaa') ){
+            throw ""+i;
+        }else{
+        }
+    }
+    for(var i=0;i<MAX;++i){
+        if( OBJ.hasOwnProperty(i) ){
+        }else{
+            throw ""+i;
+        }
+    }
+    console.timeEnd(TID);
+},
+function(){
+    var TID = "array";
     console.time(TID);
     for(var i=0;i<MAX;++i){
         if( OBJ.hasOwnProperty('aaaaaaaaaaaa') ){

@@ -1,4 +1,4 @@
-var MAX = 100000;
+var MAX = 1000000;
 var OBJ = {};
 var ARRAY = new Array(MAX);
 for(var i=0;i<MAX;++i){
@@ -59,19 +59,18 @@ function(){
     }
     console.timeEnd(TID);
 },
+// 参考までに
 function(){
     var TID = "array";
     console.time(TID);
     for(var i=0;i<MAX;++i){
-        if( OBJ.hasOwnProperty('aaaaaaaaaaaa') ){
-            throw ""+i;
+        if( ARRAY[i] !== undefined ){
         }else{
         }
     }
     for(var i=0;i<MAX;++i){
-        if( OBJ.hasOwnProperty(i) ){
+        if( ARRAY[i] !== undefined ){
         }else{
-            throw ""+i;
         }
     }
     console.timeEnd(TID);

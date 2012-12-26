@@ -18,7 +18,21 @@ var CLS2 = function(){
     this.c = 0;
     this.d = 0;
 };
+function init(thi){
+    thi.x = 0;
+    thi.y = 0;
+    thi.z = 0;
+    thi.a = 0;
+    thi.b = 0;
+    thi.c = 0;
+    thi.d = 0;
+}
 var CLS3 = function(){
+    init(this);
+};
+var CLS4 = function(){
+};
+var CLS5 = function(){
     var list = new Array(7);
     list[0] = 0;
     list[1] = 0;
@@ -27,7 +41,7 @@ var CLS3 = function(){
     list[4] = 0;
     list[5] = 0;
     list[6] = 0;
-    this._x = list;
+    this.x = list;
 };
 
 [
@@ -50,11 +64,30 @@ function(){
     console.timeEnd(TID);
 },
 function(){
+    var TID = "this_function";
+    var c = null;
+    console.time(TID);
+    for(var i = 0; i<MAX; ++i){
+        c = new CLS3();
+    }
+    console.timeEnd(TID);
+},
+function(){
+    var TID = "this_after";
+    var c = null;
+    console.time(TID);
+    for(var i = 0; i<MAX; ++i){
+        c = new CLS4();
+        init(c);
+    }
+    console.timeEnd(TID);
+},
+function(){
     var TID = "array";
     var c = null;
     console.time(TID);
     for(var i = 0; i<MAX; ++i){
-        c = new CLS2();
+        c = new CLS5();
     }
     console.timeEnd(TID);
 },

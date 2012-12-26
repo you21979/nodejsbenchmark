@@ -1,3 +1,11 @@
+/*
+v0.8.16
+switch1: 0ms
+switch2: 2ms
+switch3: 22ms
+switch4: 45ms
+switch5: 38ms
+*/
 var V = {
     A00000:0,
     A00001:1,

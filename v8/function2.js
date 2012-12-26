@@ -1,3 +1,9 @@
+/*
+v0.8.16
+anonymous: 959ms
+named1: 974ms
+named2: 232ms
+*/
 var MAX = 100000000;
 [
 function(){

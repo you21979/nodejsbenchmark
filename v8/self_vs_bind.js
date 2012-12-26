@@ -1,3 +1,8 @@
+/*
+v0.8.16
+self: 42ms
+bind: 1695ms
+*/
 var MAX = 1000000;
 var CLS = function(){
     this.x = 0;

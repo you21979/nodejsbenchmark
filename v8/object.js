@@ -1,3 +1,10 @@
+/*
+v0.8.16
+buildin: 485ms
+new Object: 4066ms
+new Func: 462ms
+new Func ex: 3043ms
+*/
 var MAX = 100000000;
 [
 function simple(){

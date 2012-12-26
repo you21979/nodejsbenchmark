@@ -1,3 +1,11 @@
+/*
+v0.8.16
+self: 167ms
+this: 105ms
+this_function: 168ms
+this_after: 377ms
+array: 219ms
+*/
 var MAX = 10000000;
 var CLS1 = function(){
     var self = this;

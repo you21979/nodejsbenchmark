@@ -1,3 +1,46 @@
+/*
+v0.8.16
+queue push:1: 0ms
+queue pop:1: 0ms
+queue push:100: 0ms
+queue pop:100: 0ms
+queue push:1000: 0ms
+queue pop:1000: 0ms
+queue push:10000: 0ms
+queue pop:10000: 0ms
+queue push:100000: 3ms
+queue pop:100000: 39191ms
+queue push:1: 0ms
+queue pop:1: 0ms
+queue push:100: 0ms
+queue pop:100: 0ms
+queue push:1000: 0ms
+queue pop:1000: 0ms
+queue push:10000: 0ms
+queue pop:10000: 1ms
+queue push:100000: 0ms
+queue pop:100000: 5ms
+circ queue push:1: 0ms
+circ queue pop:1: 0ms
+circ queue push:100: 0ms
+circ queue pop:100: 0ms
+circ queue push:1000: 0ms
+circ queue pop:1000: 0ms
+circ queue push:10000: 0ms
+circ queue pop:10000: 1ms
+circ queue push:100000: 1ms
+circ queue pop:100000: 78684ms
+circ queue push:1: 0ms
+circ queue pop:1: 0ms
+circ queue push:100: 0ms
+circ queue pop:100: 0ms
+circ queue push:1000: 0ms
+circ queue pop:1000: 0ms
+circ queue push:10000: 0ms
+circ queue pop:10000: 1ms
+circ queue push:100000: 2ms
+circ queue pop:100000: 78625ms
+*/
 var assert = require('assert');
 [
 function(MAX){

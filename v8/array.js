@@ -1,3 +1,11 @@
+/*
+v0.8.16
+buildin: 495ms
+Array1: 2020ms
+Array2: 17018ms
+Array3: 5702ms
+Array4: 1791ms
+*/
 var MAX = 100000000;
 [
 function(){
